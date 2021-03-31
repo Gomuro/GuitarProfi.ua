@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="GitarProfiMain.css"/>
+    <title>GUITARPROFI.ua</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">GUITARPROFI</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="Guitar.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Навчайся грати на гітарі Легко!</h2> 
+        <p>Тут буде короткий опис!</p>
+        <a href="#">Почати навчання!</a>
+      </div>
+      <ul class="social">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>4
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Уроки гри</a></li>
+        <li><a href="#">Для творців</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </div>
+    <div class="descripiton">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis labore sit numquam excepturi illo tenetur quas. Perferendis et a ab saepe tenetur animi mollitia libero illo, praesentium dolores obcaecati odit!</p>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+  </body>
+</html>
